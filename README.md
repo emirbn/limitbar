@@ -9,7 +9,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-6e5aff?style=flat-square)](LICENSE)
 [![Site](https://img.shields.io/badge/site-limitbar.basaran.dev-16d3b4?style=flat-square)](https://limitbar.basaran.dev)
 
-<a href="https://limitbar.basaran.dev"><img src="docs/social.png?v=dd6ec2d887455441" alt="LimitBar — every AI coding limit in your menu bar. 87 providers." width="100%" /></a>
+<a href="https://limitbar.basaran.dev"><img src="docs/social.png?v=20260929" alt="LimitBar — every AI coding limit in your menu bar. 87 providers." width="100%" /></a>
 
 Tiny macOS 14+ menu bar app that keeps **AI coding-provider limits visible** and shows when each window resets. See the [supported providers](#providers) below. One status item per provider, or Merge Icons mode with a provider switcher. No Dock icon, minimal UI, dynamic bar icons.
 
@@ -295,4 +295,4 @@ Inspired by [ccusage](https://github.com/ryoppippi/ccusage) (MIT), specifically 
 Forked from [CodexBar](https://github.com/steipete/CodexBar) by Peter Steinberger (MIT licensed).
 
 ## License
-MIT • LimitBar by Integron Technology
+MIT License LimitBar
