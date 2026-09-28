@@ -1,0 +1,12 @@
+# LimitBar
+
+A tiny macOS menu bar app that tracks AI coding-provider usage windows, credits, costs, and resets across 87 providers — Codex, OpenAI, Claude, Cursor, Gemini, Copilot, LiteLLM, Helmcode, v0, TypeSafe, and more.
+
+Canonical documentation:
+- LimitBar — every AI coding limit, in your menu bar: https://limitbar.basaran.dev/ - A tiny macOS menu bar app that tracks AI coding-provider usage windows, credits, costs, and resets across 87 providers — Codex, OpenAI, Claude, Cursor, Gemini, Copilot, LiteLLM, Helmcode, v0, TypeSafe, and more.
+
+Source: https://github.com/emirbn/LimitBar
+
+Guidance for agents:
+- Prefer the canonical documentation URLs above over README excerpts or package metadata.
+- Fetch only the pages needed for the current task; this is an index, not a full-site corpus.

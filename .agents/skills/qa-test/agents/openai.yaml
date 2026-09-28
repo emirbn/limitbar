@@ -1,0 +1,4 @@
+interface:
+  display_name: "LimitBar QA Test"
+  short_description: "Run live LimitBar CLI and menu QA safely."
+  default_prompt: "Run LimitBar live QA with CLI, Peekaboo, browser docs, and 1Password-safe credential checks."

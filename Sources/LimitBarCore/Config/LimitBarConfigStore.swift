@@ -1,0 +1,115 @@
+import Foundation
+
+public enum LimitBarConfigStoreError: LocalizedError {
+    case invalidURL
+    case decodeFailed(String)
+    case encodeFailed(String)
+
+    public var errorDescription: String? {
+        switch self {
+        case .invalidURL:
+            "Invalid LimitBar config path."
+        case let .decodeFailed(details):
+            "Failed to decode LimitBar config: \(details)"
+        case let .encodeFailed(details):
+            "Failed to encode LimitBar config: \(details)"
+        }
+    }
+}
+
+public struct LimitBarConfigStore: @unchecked Sendable {
+    public static let pathEnvironmentKey = "LIMITBAR_CONFIG"
+    public static let xdgConfigHomeEnvironmentKey = "XDG_CONFIG_HOME"
+
+    public let fileURL: URL
+    private let fileManager: FileManager
+
+    public init(fileURL: URL = Self.defaultURL(), fileManager: FileManager = .default) {
+        self.fileURL = fileURL
+        self.fileManager = fileManager
+    }
+
+    public func load() throws -> LimitBarConfig? {
+        guard self.fileManager.fileExists(atPath: self.fileURL.path) else { return nil }
+        let data = try Data(contentsOf: self.fileURL)
+        do {
+            let decoded = try LimitBarConfig.decode(from: data)
+            return decoded.normalized()
+        } catch {
+            throw LimitBarConfigStoreError.decodeFailed(error.localizedDescription)
+        }
+    }
+
+    public func loadOrCreateDefault() throws -> LimitBarConfig {
+        if let existing = try self.load() {
+            return existing
+        }
+        let config = LimitBarConfig.makeDefault()
+        try self.save(config)
+        return config
+    }
+
+    public func save(_ config: LimitBarConfig) throws {
+        let data = try self.encodedData(for: config)
+        try self.saveEncodedData(data)
+    }
+
+    public func encodedData(for config: LimitBarConfig) throws -> Data {
+        do {
+            return try config.normalized().encodedData()
+        } catch {
+            throw LimitBarConfigStoreError.encodeFailed(error.localizedDescription)
+        }
+    }
+
+    public func saveEncodedData(_ data: Data) throws {
+        try CredentialFileWriter.writePrivate(data, to: self.fileURL)
+    }
+
+    public func deleteIfPresent() throws {
+        guard self.fileManager.fileExists(atPath: self.fileURL.path) else { return }
+        try self.fileManager.removeItem(at: self.fileURL)
+    }
+
+    public static func defaultURL(
+        home: URL = FileManager.default.homeDirectoryForCurrentUser,
+        environment: [String: String] = ProcessInfo.processInfo.environment,
+        fileManager: FileManager = .default) -> URL
+    {
+        if let override = environment[pathEnvironmentKey]?.trimmingCharacters(in: .whitespacesAndNewlines),
+           !override.isEmpty
+        {
+            let expanded = (override as NSString).expandingTildeInPath
+            return URL(fileURLWithPath: expanded)
+        }
+
+        if let xdgConfigHome = environment[xdgConfigHomeEnvironmentKey]?
+            .trimmingCharacters(in: .whitespacesAndNewlines),
+            !xdgConfigHome.isEmpty
+        {
+            let expanded = (xdgConfigHome as NSString).expandingTildeInPath
+            if (expanded as NSString).isAbsolutePath {
+                return URL(fileURLWithPath: expanded, isDirectory: true)
+                    .appendingPathComponent("limitbar", isDirectory: true)
+                    .appendingPathComponent("config.json")
+            }
+        }
+
+        let xdgDefault = home
+            .appendingPathComponent(".config", isDirectory: true)
+            .appendingPathComponent("limitbar", isDirectory: true)
+            .appendingPathComponent("config.json")
+        if fileManager.fileExists(atPath: xdgDefault.path) {
+            return xdgDefault
+        }
+
+        let legacy = home
+            .appendingPathComponent(".limitbar", isDirectory: true)
+            .appendingPathComponent("config.json")
+        if fileManager.fileExists(atPath: legacy.path) {
+            return legacy
+        }
+
+        return xdgDefault
+    }
+}

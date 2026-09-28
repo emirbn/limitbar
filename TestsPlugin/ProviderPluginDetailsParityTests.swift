@@ -1,0 +1,1 @@
+../Tests/LimitBarTests/ProviderPluginDetailsParityTests.swift

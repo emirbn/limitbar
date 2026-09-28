@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Inherited by test runners and their CLI children.
+export LIMITBAR_TEST_CODEX_FILE_ISOLATION=1
+unset LIMITBAR_TEST_CODEX_FILE_FIXTURES
+export LIMITBAR_TEST_SESSION_FILE_ISOLATION=1
+
+if [[ "${LIMITBAR_ALLOW_TEST_KEYCHAIN_ACCESS:-}" != "1" ]]; then
+  export LIMITBAR_SUPPRESS_TEST_KEYCHAIN_ACCESS=1
+fi
