@@ -714,7 +714,7 @@
 "update_channel" = "قناة التحديث";
 "check_for_updates" = "تحقق من التحديثات...";
 "updates_unavailable" = "التحديثات غير متوفرة في هذا الإصدار.";
-"copyright" = "© 2026 بيتر ستاينبرجر. MIT الرخصة.";
+"copyright" = "© 2026 LimitBar. MIT الرخصة.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "استخدام JavaScriptCore لإضافات المزوّد";

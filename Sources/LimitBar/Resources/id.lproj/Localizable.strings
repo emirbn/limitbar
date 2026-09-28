@@ -716,7 +716,7 @@
 "update_channel" = "Saluran Pembaruan";
 "check_for_updates" = "Periksa Pembaruan…";
 "updates_unavailable" = "Pembaruan tidak tersedia di build ini.";
-"copyright" = "© 2026 Emir Sezer BaÅaran. Lisensi MIT.";
+"copyright" = "© 2026 LimitBar. Lisensi MIT.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "Gunakan JavaScriptCore untuk plugin penyedia";

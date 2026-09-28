@@ -694,7 +694,7 @@
 "update_channel" = "업데이트 채널";
 "check_for_updates" = "업데이트 확인…";
 "updates_unavailable" = "이 빌드에서는 업데이트를 사용할 수 없습니다.";
-"copyright" = "© 2026 Emir Sezer BaÅaran. MIT License.";
+"copyright" = "© 2026 LimitBar. MIT License.";
 "use_javascriptcore_plugin_engine" = "제공자 플러그인에 JavaScriptCore 사용";
 "use_javascriptcore_plugin_engine_subtitle" = "호환성 롤백 전용입니다. 적용하려면 LimitBar를 재시작하세요. LIMITBAR_PLUGIN_ENGINE이 이 설정보다 우선합니다.";
 "section_logging" = "로깅";

@@ -714,7 +714,7 @@
 "update_channel" = "Güncelleme kanalı";
 "check_for_updates" = "Güncellemeleri denetle…";
 "updates_unavailable" = "Bu derlemede güncellemeler kullanılamıyor.";
-"copyright" = "© 2026 Emir Sezer BaÅaran. MIT Lisansı.";
+"copyright" = "© 2026 LimitBar. MIT Lisansı.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "Sağlayıcı eklentileri için JavaScriptCore kullan";

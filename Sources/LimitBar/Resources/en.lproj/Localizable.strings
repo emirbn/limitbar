@@ -697,7 +697,7 @@
 "update_channel" = "Update channel";
 "check_for_updates" = "Check for Updates…";
 "updates_unavailable" = "Updates unavailable in this build.";
-"copyright" = "© 2026 Emir Sezer BaÅaran. MIT License.";
+"copyright" = "© 2026 LimitBar. MIT License.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "Use JavaScriptCore for provider plugins";

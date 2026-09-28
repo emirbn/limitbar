@@ -707,7 +707,7 @@
 "update_channel" = "Uppdateringskanal";
 "check_for_updates" = "Sök efter uppdateringar…";
 "updates_unavailable" = "Uppdateringar är inte tillgängliga i det här bygget.";
-"copyright" = "© 2026 Emir Sezer BaÅaran. MIT-licens.";
+"copyright" = "© 2026 LimitBar. MIT-licens.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "Använd JavaScriptCore för leverantörsinsticksfiler";

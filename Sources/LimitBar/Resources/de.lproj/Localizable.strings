@@ -706,7 +706,7 @@
 "update_channel" = "Kanal aktualisieren";
 "check_for_updates" = "Nach Updates suchen…";
 "updates_unavailable" = "Updates sind in diesem Build nicht verfügbar.";
-"copyright" = "© 2026 Emir Sezer BaÅaran. MIT-Lizenz.";
+"copyright" = "© 2026 LimitBar. MIT-Lizenz.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "JavaScriptCore für Anbieter-Plugins verwenden";

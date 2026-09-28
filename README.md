@@ -1,4 +1,4 @@
-# LimitBar 🎚️ — May your tokens never run out.
+# LimitBar - May your tokens never run out.
 
 > Every AI coding limit, in your menu bar.
 
@@ -6,7 +6,6 @@
 [![macOS 14+](https://img.shields.io/badge/macOS-14%2B-0a0a0c?style=flat-square)](https://github.com/emirbn/LimitBar/releases/latest)
 [![Linux desktop](https://img.shields.io/badge/Linux-Qt_6-1793d1?style=flat-square)](Integrations/Linux/README.md)
 [![Homebrew](https://img.shields.io/badge/brew-emirbn%2Ftap%2Flimitbar-orange?style=flat-square)](https://github.com/emirbn/homebrew-tap)
-[![AUR](https://img.shields.io/aur/version/limitbar-cli?style=flat-square&color=1793d1)](https://aur.archlinux.org/packages/limitbar-cli)
 [![License: MIT](https://img.shields.io/badge/license-MIT-6e5aff?style=flat-square)](LICENSE)
 [![Site](https://img.shields.io/badge/site-limitbar.basaran.dev-16d3b4?style=flat-square)](https://limitbar.basaran.dev)
 
@@ -55,10 +54,6 @@ supported features and remaining gaps.
 Homebrew formula (Linux today):
 ```bash
 brew install emirbn/tap/limitbar
-```
-Arch Linux AUR package:
-```bash
-yay -S limitbar-cli
 ```
 Or download release tarballs from GitHub Releases:
 - macOS: `LimitBarCLI-v<tag>-macos-arm64.tar.gz`, `LimitBarCLI-v<tag>-macos-x86_64.tar.gz`

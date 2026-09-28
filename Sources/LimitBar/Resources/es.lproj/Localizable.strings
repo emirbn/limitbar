@@ -701,7 +701,7 @@
 "update_channel" = "Canal de actualizaciones";
 "check_for_updates" = "Buscar actualizaciones…";
 "updates_unavailable" = "Actualizaciones no disponibles en esta compilación.";
-"copyright" = "© 2026 Emir Sezer BaÅaran. Licencia MIT.";
+"copyright" = "© 2026 LimitBar. Licencia MIT.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "Usar JavaScriptCore para los complementos de proveedores";

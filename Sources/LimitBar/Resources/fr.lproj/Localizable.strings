@@ -708,7 +708,7 @@
 "update_channel" = "Mettre à jour la chaîne";
 "check_for_updates" = "Rechercher les mises à jour…";
 "updates_unavailable" = "Mises à jour non disponibles dans cette version.";
-"copyright" = "© 2026 Emir Sezer BaÅaran. Licence MIT.";
+"copyright" = "© 2026 LimitBar. Licence MIT.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "Utiliser JavaScriptCore pour les extensions de fournisseurs";

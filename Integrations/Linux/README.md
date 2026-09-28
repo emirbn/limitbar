@@ -102,9 +102,9 @@ disable starting at login. Then open the installed app:
 
 Put `~/.local/bin` on your PATH to use `limitbar` without its full path. The
 symlink resolves to the CLI installation directory; keep `VERSION` and
-`LimitBar_LimitBarCore.bundle` there when upgrading. Homebrew and the AUR
-`limitbar-cli` package are alternative CLI installation methods; with an existing
-CLI, pass its absolute path to the desktop installer instead.
+`LimitBar_LimitBarCore.bundle` there when upgrading. Homebrew is an alternative CLI
+installation method; with an existing CLI, pass its absolute path to the desktop
+installer instead.
 
 If the unauthenticated GitHub API is rate-limited, download the four matching
 files from [GitHub Releases](https://github.com/emirbn/LimitBar/releases/latest),

@@ -705,7 +705,7 @@
 "update_channel" = "アップデートチャンネル";
 "check_for_updates" = "アップデートを確認…";
 "updates_unavailable" = "このビルドではアップデートを利用できません。";
-"copyright" = "© 2026 Emir Sezer BaÅaran. MIT License.";
+"copyright" = "© 2026 LimitBar. MIT License.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "プロバイダープラグインにJavaScriptCoreを使用";

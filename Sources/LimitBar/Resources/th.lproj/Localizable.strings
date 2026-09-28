@@ -714,32 +714,7 @@
 "update_channel" = "อัปเดตช่อง";
 "check_for_updates" = "ตรวจสอบการอัปเดต...";
 "updates_unavailable" = "การอัปเดตไม่พร้อมใช้งานในรุ่นนี้";
-"copyright" = "© 2026 ปีเตอร์ สไตน์เบอร์เกอร์ ใบอนุญาต MIT";
-
-/* Debug Pane */
-"use_javascriptcore_plugin_engine" = "ใช้ JavaScriptCore สำหรับปลั๊กอินผู้ให้บริการ";
-"use_javascriptcore_plugin_engine_subtitle" = "ใช้เพื่อย้อนกลับด้านความเข้ากันได้เท่านั้น เริ่ม LimitBar ใหม่เพื่อใช้ค่า; LIMITBAR_PLUGIN_ENGINE จะแทนที่การตั้งค่านี้";
-"section_logging" = "การบันทึก";
-"enable_file_logging" = "เปิดใช้งานการบันทึกไฟล์";
-"enable_file_logging_subtitle" = "เขียนบันทึกไปยัง %@ เพื่อแก้ไขข้อบกพร่อง";
-"verbosity_title" = "รายละเอียด";
-"verbosity_subtitle" = "ควบคุมจํานวนรายละเอียดที่บันทึกไว้";
-"open_log_file" = "เปิดไฟล์บันทึก";
-"force_animation_next_refresh" = "บังคับให้เคลื่อนไหวในการรีเฟรชครั้งถัดไป";
-"force_animation_next_refresh_subtitle" = "แสดงภาพเคลื่อนไหวการโหลดชั่วคราวหลังจากการรีเฟรชครั้งถัดไป";
-"section_loading_animations" = "กําลังโหลดภาพเคลื่อนไหว";
-"loading_animations_caption" = "เลือกรูปแบบและเล่นซ้ําในแถบเมนู \"สุ่ม\" จะคงพฤติกรรมที่มีอยู่ไว้";
-"animation_random_default" = "สุ่ม (ค่าเริ่มต้น)";
-"replay_selected_animation" = "เล่นซ้ําภาพเคลื่อนไหวที่เลือก";
-"blink_now" = "กะพริบตาตอนนี้";
-"section_probe_logs" = "บันทึกโพรบ";
-"probe_logs_caption" = "ดึงเอาท์พุตโพรบล่าสุดสําหรับการดีบัก สําเนาเก็บข้อความฉบับเต็ม";
-"fetch_log" = "ดึงข้อมูลบันทึก";
-"copy" = "สําเนา";
-"save_to_file" = "บันทึกลงในไฟล์";
-"load_parse_dump" = "โหลดการถ่ายโอนข้อมูลแยกวิเคราะห์";
-"rerun_provider_autodetect" = "เรียกใช้การตรวจหาอัตโนมัติของผู้ให้บริการอีกครั้ง";
-"loading" = "กําลังโหลด...";
+"copyright" = "© 2026 LimitBar. ..";
 "no_log_yet_fetch" = "ยังไม่มีบันทึก ดึงข้อมูลเพื่อโหลด";
 "section_fetch_strategy" = "ความพยายามในการดึงกลยุทธ์";
 "fetch_strategy_caption" = "การตัดสินใจและข้อผิดพลาดในการดึงข้อมูลไปป์ไลน์ล่าสุดสําหรับผู้ให้บริการ";

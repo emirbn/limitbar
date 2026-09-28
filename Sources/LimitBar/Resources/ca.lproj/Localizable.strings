@@ -692,7 +692,7 @@
 "update_channel" = "Canal d'actualitzacions";
 "check_for_updates" = "Cerca actualitzacions…";
 "updates_unavailable" = "Actualitzacions no disponibles en aquesta compilació.";
-"copyright" = "© 2026 Emir Sezer BaÅaran. Llicència MIT.";
+"copyright" = "© 2026 LimitBar. Llicència MIT.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "Utilitza JavaScriptCore per als connectors de proveïdor";

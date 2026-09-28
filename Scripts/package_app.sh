@@ -360,7 +360,7 @@ cat > "$APP/Contents/Info.plist" <<PLIST
     <key>LSMinimumSystemVersion</key><string>14.0</string>
     <key>LSUIElement</key><true/>
     <key>CFBundleIconFile</key><string>Icon</string>
-    <key>NSHumanReadableCopyright</key><string>© 2026 Emir Sezer Başaran. MIT License.</string>
+    <key>NSHumanReadableCopyright</key><string>© 2026 LimitBar. MIT License.</string>
     <key>SUFeedURL</key><string>${FEED_URL}</string>
     <key>SUPublicEDKey</key><string>Ndy8b7MFDBWKkNcAyz1EMdF2IzIK35akXzdHhaLMrXk=</string>
     <key>SUEnableAutomaticChecks</key><${AUTO_CHECKS}/>

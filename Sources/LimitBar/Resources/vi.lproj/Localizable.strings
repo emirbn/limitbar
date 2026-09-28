@@ -704,7 +704,7 @@
 "update_channel" = "Kênh cập nhật";
 "check_for_updates" = "Kiểm tra các bản cập nhật…";
 "updates_unavailable" = "Các bản cập nhật không có sẵn trong bản dựng này.";
-"copyright" = "© 2026 Emir Sezer BaÅaran. Giấy phép MIT.";
+"copyright" = "© 2026 LimitBar. Giấy phép MIT.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "Dùng JavaScriptCore cho phần bổ trợ nhà cung cấp";

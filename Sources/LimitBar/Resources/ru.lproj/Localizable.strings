@@ -709,7 +709,7 @@
 "update_channel" = "Канал обновлений";
 "check_for_updates" = "Проверить наличие обновлений…";
 "updates_unavailable" = "Обновления недоступны в этой сборке.";
-"copyright" = "© 2026 Emir Sezer BaÅaran. Лицензия MIT.";
+"copyright" = "© 2026 LimitBar. Лицензия MIT.";
 
 /* Debug Pane */
 "use_javascriptcore_plugin_engine" = "Использовать JavaScriptCore для плагинов провайдеров";
