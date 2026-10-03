@@ -4,7 +4,7 @@ SHELL := /bin/bash
 unexport FILTER
 test_filter_arg = $(if $(value FILTER),--filter '$(subst ','"'"',$(value FILTER))')
 
-.PHONY: build check docs-list format lint release restart start start-debug start-release stop test test-fast test-skip-build test-live test-tty
+.PHONY: build check docs-list format lint release restart start start-debug start-release stop test test-fast test-skip-build test-live test-tty uninstall uninstall-cli
 
 start:
 	./Scripts/compile_and_run.sh
@@ -51,3 +51,13 @@ test-live:
 
 release:
 	./Scripts/package_app.sh release
+
+uninstall-cli:
+	rm -f /usr/local/bin/limitbar /opt/homebrew/bin/limitbar
+	@echo "LimitBar CLI uninstalled successfully."
+
+uninstall: stop uninstall-cli
+	rm -rf "/Applications/LimitBar.app" "$(CURDIR)/LimitBar.app"
+	rm -rf ~/Library/Application\ Support/LimitBar
+	rm -rf ~/.config/limitbar
+	@echo "LimitBar app and configuration uninstalled successfully."
