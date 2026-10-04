@@ -2,12 +2,12 @@
 set -euo pipefail
 
 APP_NAME="LimitBar"
-APP_IDENTITY="${APP_IDENTITY:-Developer ID Application: Emir Sezer Başaran (3PX7AVGF37)}"
 APP_BUNDLE="LimitBar.app"
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 if [[ -f "$ROOT/.env.local" ]]; then
   source "$ROOT/.env.local"
 fi
+APP_IDENTITY="${APP_IDENTITY:-35B4C022F2D2790AAD4B4FBBBB111B5BFE08CAC8}"
 source "$ROOT/version.env"
 source "$ROOT/Scripts/release_artifacts.sh"
 source "$ROOT/Scripts/package_product_paths.sh"
