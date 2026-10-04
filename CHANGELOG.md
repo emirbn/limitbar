@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.0 — 2026-10-04 (LimitBar Initial Release)
+
+### Highlights
+
+- Initial release of **LimitBar** (forked from CodexBar).
+- Refreshed brand identity, menu bar styling, and social preview assets.
+- Official Apple Notarization and Developer ID code signing support for seamless distribution on macOS without Gatekeeper warnings.
+- Dedicated Homebrew Tap distribution via `emirbn/tap/limitbar`.
+- Added automated `uninstall` and `uninstall-cli` targets to Makefile.
+
+---
+
+## CodexBar Legacy History (Prior to Fork)
+
 ## 0.68.0 — 2026-09-27
 
 ### Highlights
